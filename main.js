@@ -28,7 +28,7 @@ function isClosed(){
     modalOverlay.classList.add('hidden');s
 }// function declaration || function statement
 
-*/   
+*/
 //function expression
 
 const isClosed = function () {
@@ -36,7 +36,26 @@ const isClosed = function () {
     modalOverlay.classList.add('hidden');
 }
 
-
 closeModal.addEventListener('click', isClosed);
 modalOverlay.addEventListener('click', isClosed);
+
+//check if a class is present and the using the 'Key press button on your modal'
+
+//hitting the esc key on the key board ---listen for key board events they are global events 
+//global events we have keyup, keypress, keydown  
+document.addEventListener('keydown', function (e) {
+    console.log(e.key)
+
+    //'Escape' key functionality to close the modal 
+    if (e.key === 'Escape') {
+        if (isOpened) {
+           isClosed();
+        }
+    }
+})
+
+
+//New Project =======//
+
+
 

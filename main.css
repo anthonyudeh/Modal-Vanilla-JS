@@ -1,6 +1,6 @@
 
  body{
-    background: green;
+    background: #fff;
 }
 
 .general-wrapper-container{
@@ -44,10 +44,11 @@
 }
 
 .first-btn{
-    padding: 8px 28px;
+    padding: 8px 32px;
     border-radius:999px;
     border: 1px solid transparent;
     cursor: pointer;
+    box-shadow: 0px 0px 14px 2px;
 }
 
 .overlay{
